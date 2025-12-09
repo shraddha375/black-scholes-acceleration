@@ -25,5 +25,12 @@ Use these FPGA pins:
 | CS           | A8                |  L16       |Active-low  |
 | GND          | Any GND           |  —         |Needed      |
 
-                                     
+## Wiring Diagram
 
+    ESP32 GPIO14  ─── SCK  ─── A5  (G17)
+    ESP32 GPIO13  ─── MOSI ─── A6  (J18)
+    ESP32 GPIO12  ─── MISO ─── A7  (K15)
+    ESP32 GPIO15  ─── CS   ─── A8  (L16)
+    ESP32 GND     ─────────── GND
+
+⚠ Both boards run at 3.3V → logic-level safe, no converters needed.
